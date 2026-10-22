@@ -3,7 +3,7 @@ version: 2.1
 jobs:
   deploy:
     docker:
-      - image: cimg/go:1.19.1
+      - image: cimg/go:1.24
     steps:
       - checkout
       - run: curl -sL https://git.io/goreleaser | bash
